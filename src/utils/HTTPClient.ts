@@ -227,6 +227,18 @@ export default class HTTPClient {
       ctx.client.platform = 'MOBILE';
     }
 
+    
+    if (
+      clientName === 'ANDROID_VR'
+    ) {
+      ctx.client.androidSdkVersion = 32;
+      ctx.client.userAgent = 'com.google.android.apps.youtube.vr.oculus/1.71.26 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip';
+      ctx.client.osName = 'Android';
+      ctx.client.osVersion = '12L';
+      ctx.client.platform = 'MOBILE';
+    }
+
+
     switch (clientName) {
       case 'MWEB':
         ctx.client.clientVersion = Constants.CLIENTS.MWEB.VERSION;
@@ -248,6 +260,11 @@ export default class HTTPClient {
       case 'YTMUSIC':
         ctx.client.clientVersion = Constants.CLIENTS.YTMUSIC.VERSION;
         ctx.client.clientName = Constants.CLIENTS.YTMUSIC.NAME;
+        break;
+      case 'ANDROID_VR':
+        ctx.client.clientVersion = '1.71.26';
+        ctx.client.clientFormFactor = 'SMALL_FORM_FACTOR';
+        ctx.client.clientName = 'ANDROID_VR';
         break;
       case 'ANDROID':
         ctx.client.clientVersion = Constants.CLIENTS.ANDROID.VERSION;
