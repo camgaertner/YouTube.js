@@ -227,7 +227,6 @@ export default class HTTPClient {
       ctx.client.platform = 'MOBILE';
     }
 
-    
     if (
       clientName === 'ANDROID_VR'
     ) {
@@ -237,7 +236,6 @@ export default class HTTPClient {
       ctx.client.osVersion = '12L';
       ctx.client.platform = 'MOBILE';
     }
-
 
     switch (clientName) {
       case 'MWEB':
@@ -261,15 +259,15 @@ export default class HTTPClient {
         ctx.client.clientVersion = Constants.CLIENTS.YTMUSIC.VERSION;
         ctx.client.clientName = Constants.CLIENTS.YTMUSIC.NAME;
         break;
-      case 'ANDROID_VR':
-        ctx.client.clientVersion = '1.71.26';
-        ctx.client.clientFormFactor = 'SMALL_FORM_FACTOR';
-        ctx.client.clientName = 'ANDROID_VR';
-        break;
       case 'ANDROID':
         ctx.client.clientVersion = Constants.CLIENTS.ANDROID.VERSION;
         ctx.client.clientFormFactor = 'SMALL_FORM_FACTOR';
         ctx.client.clientName = Constants.CLIENTS.ANDROID.NAME;
+        break;
+      case 'ANDROID_VR':
+        ctx.client.clientVersion = Constants.CLIENTS.ANDROID_VR.VERSION;
+        ctx.client.clientFormFactor = 'SMALL_FORM_FACTOR';
+        ctx.client.clientName = Constants.CLIENTS.ANDROID_VR.NAME;
         break;
       case 'YTMUSIC_ANDROID':
         ctx.client.clientVersion = Constants.CLIENTS.YTMUSIC_ANDROID.VERSION;

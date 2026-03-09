@@ -58,6 +58,12 @@ export const CLIENTS = {
     SDK_VERSION: 36,
     USER_AGENT: 'com.google.android.youtube/21.03.36(Linux; U; Android 16; en_US; SM-S908E Build/TP1A.220624.014) gzip'
   },
+  ANDROID_VR: {
+    NAME: 'ANDROID_VR',
+    VERSION: '1.71.26',
+    SDK_VERSION: 32,
+    USER_AGENT: 'com.google.android.apps.youtube.vr.oculus/1.71.26 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip'
+  },
   YTSTUDIO_ANDROID: {
     NAME: 'ANDROID_CREATOR',
     VERSION: '22.43.101'
@@ -106,6 +112,7 @@ export const CLIENT_NAME_IDS = {
   ANDROID: '3',
   ANDROID_CREATOR: '14',
   ANDROID_MUSIC: '21',
+  ANDROID_TV: '28',
   TVHTML5: '7',
   TVHTML5_SIMPLY: '74',
   TVHTML5_SIMPLY_EMBEDDED_PLAYER: '85',
