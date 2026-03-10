@@ -265,6 +265,8 @@ export default class HTTPClient {
         ctx.client.clientName = Constants.CLIENTS.ANDROID.NAME;
         break;
       case 'ANDROID_VR':
+        ctx.client.deviceMake = Constants.CLIENTS.ANDROID_VR.DEVICE_MAKE;
+        ctx.client.deviceModel = Constants.CLIENTS.ANDROID_VR.DEVICE_MODEL;
         ctx.client.clientVersion = Constants.CLIENTS.ANDROID_VR.VERSION;
         ctx.client.clientFormFactor = 'SMALL_FORM_FACTOR';
         ctx.client.clientName = Constants.CLIENTS.ANDROID_VR.NAME;
